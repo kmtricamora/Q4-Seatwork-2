@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Q4 Seatwork 2</title>
+	<style type="text/css">
+		body{
+			background:#8FAA8C;
+		}
+		h1, h5, h6{
+			font-family: Palatino;
+		}
+		h5{
+			font-size: 50px;
+		}
+		form{
+			font-family:Lucida Bright ;
+			font-size: 25px;
+		}
+		button{
+			font-size: 20px;
+			font-family: Lucida Bright;
+		}
+		p{
+			font-family:Baskerville;
+			font-size:30px;
+			color: #596F57;
+		}
+		.container{
+			padding:40px;
+			margin:50px;
+		}
+		table {
+ 			border-collapse: collapse;
+ 			width: 100%;
+		}
+		td, th {
+ 			border: 1px solid #A3B6A1;
+			text-align: center;
+			padding: 8px;
+			color: #61735F;
+		}
+
+</style>
+</head>
+<body>
+	<p id="today">
+	<center>
+		<h1 style="background-color: #B9DCB6; color: #596F57; text-align: center;">Temperature Conversion: °F to °C</h1>
+<center>
+	<form style="color: #596F57;"><b>
+		Convert °F to °C 
+<input type="text" id="num1">
+<br>
+<br>
+<button type="submit" onclick="Compute()">Convert</button>
+</form>
+</center>
+<script type="text/javascript">
+	function Compute(){
+		let num1 = document.getElementById("num1").value;
+		let celsius = (num1 - 32) * 5/9;
+
+		window.alert("The value in °C is: " + celsius);
+	}
+	const date = new Date();
+	document.getElementById("today").innerHTML = date;
+</script>
+<br>
+<hr>
+<h5 style="color: #596F57; text-align: center;">If the Conversion - (value in °C), = (Temperature Description)</h5>
+	<table>
+  <tr>
+    <td>-273.15 °C = Absolute Zero</td>
+  </tr>
+  <tr>
+    <td>O °C = Freezing/melting point of water</td>
+  </tr>
+  <tr>
+    <td>21°C  = Room Temperature </td>
+  </tr>
+  <tr>
+    <td>37°C = Average body temperature</td>
+  </tr>
+  <tr>
+    <td>10O °C = Boiling point of water</td>
+  </tr>
+</table>
+</p>
+</div>
+</center>
+</body>
+</html>
